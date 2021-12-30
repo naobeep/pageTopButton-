@@ -332,8 +332,9 @@ var PageTop = /*#__PURE__*/ (function () {
       key: '_init',
       value: function _init() {
         // ボタンの生成
-        elementGenerator(this.elementSource); // ボタンの出し入れ
+        elementGenerator(this.elementSource);
 
+        // ボタンの出し入れ
         var topBtn = document.getElementById('pageTop');
         var observer = new IntersectionObserver(
           function (entry) {
@@ -348,8 +349,9 @@ var PageTop = /*#__PURE__*/ (function () {
             rootMargin: '0px 0px -100%',
           }
         );
-        observer.observe(document.body); // ボタンホバー時のエフェクト
+        observer.observe(document.body);
 
+        // ボタンホバー時のエフェクト
         topBtn.addEventListener(
           'mouseenter',
           function () {

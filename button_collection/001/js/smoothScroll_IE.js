@@ -21,8 +21,8 @@
         });
       }, 300);
     }, 70); //  ページ外から飛んできたときにスムーススクロールが働かないときはここの数値を調整（ミリ秒）
-  // ページ内リンクを踏んだときの制御
 
+  // ページ内リンクを踏んだときの制御
   var anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach(function (a) {
     a.addEventListener('click', function (e) {
