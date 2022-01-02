@@ -34,9 +34,7 @@
           behavior: 'smooth',
         });
       } else {
-        // const currentTop = window.scrollY;
-        const currentTop = window.screenY;
-        console.log(currentTop);
+        const currentTop = pageYOffset;
         scroll({
           top: 0,
           behavior: 'smooth',

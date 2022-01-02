@@ -34,7 +34,7 @@
           behavior: 'smooth',
         });
       } else {
-        const currentTop = window.scrollY;
+        const currentTop = pageYOffset;
         console.log(currentTop);
         scroll({
           top: 0,
@@ -47,7 +47,7 @@
           });
         }, 1000);
         setTimeout(function () {
-          alert('トップに戻ったけど引き返してきちゃったボタン');
+          alert('トップに戻ったけど引き返してきちゃうボタン');
         }, 2000);
       }
     });

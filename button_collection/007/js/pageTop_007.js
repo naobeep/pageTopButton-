@@ -367,11 +367,10 @@ var PageTop = /*#__PURE__*/ (function () {
           true
         );
         topBtn.addEventListener('click', function () {
-          const currentTop = window.scrollY + window.innerHeight;
-          console.log(currentTop);
-          this.style.transform = `translate(-70px, -${currentTop}px)`;
+          const currentTop = pageYOffset + window.innerHeight;
+          this.style.transform = 'translate(-70px, -'.concat(currentTop, 'px)');
           setTimeout(function () {
-            alert('トップに戻る　“ボタン”');
+            alert('トップに戻る “ボタン”');
           }, 1200);
         });
       },
