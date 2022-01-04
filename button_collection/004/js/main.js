@@ -1,5 +1,5 @@
 const settings = {
-  // baseColor: '#040', //  string
+  // baseColor: '#14641e', //  string
   // borderColor: '#000', //  string
   // borderRadius: 10, //  number
   // borderThickness: 1,  //  number

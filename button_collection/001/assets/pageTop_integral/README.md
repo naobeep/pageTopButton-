@@ -5,28 +5,30 @@
 ## 使い方
 
 - integral
+
   - `pageTop.js`を直接読み込んで使用します。
   - Internet Explorer で使用する場合は`polyfills.js`も読み込む必要があります。
   - スムーススクロールを実装する場合は`smoothScroll.js`も読み込む必要があります。
+
   1. (`polyfills.js`を読み込む)
   2. (`smoothScroll`を読み込む)
   3. `pageTop.js`を読み込む
   4. `main.js`等で`PageTop`をインスタンスする。
   5. (`smoothScroll()`を呼び出す。)
 
-    ```html
-    <script src="~/polyfills.js"></script>
-    <script src="~/pageTop.js"></script>
-    <script src="~/smoothScroll_IE.js"></script>
-    <script src="~/main.js"></script>
-    ```
+  ```html
+  <script src="~/polyfills.js"></script>
+  <script src="~/pageTop.js"></script>
+  <script src="~/smoothScroll_IE.js"></script>
+  <script src="~/main.js"></script>
+  ```
 
 ### 書式
 
 ```js
 const settings = {
   // プロパティはすべて省略可。省略した場合は下記の値がデフォルト値として設定されます。
-  baseColor: '#040', //  (string) ボタンの色
+  baseColor: '#14641e', //  (string) ボタンの色
   borderColor: '#FFF', //  (string) ボタンの縁取りの色
   borderRadius: 10, //  (number) ボタンの角丸の設定
   borderThickness: 1, //  (number) ボタンの縁取りの幅
